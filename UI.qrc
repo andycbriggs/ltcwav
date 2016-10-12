@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>stylesheet.qss</file>
+        <file>wav.png</file>
+    </qresource>
+</RCC>
