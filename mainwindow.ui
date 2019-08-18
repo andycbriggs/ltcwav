@@ -217,6 +217,12 @@
           <height>24</height>
          </size>
         </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
      </layout>
@@ -224,6 +230,22 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>sbFromHours</tabstop>
+  <tabstop>sbFromMins</tabstop>
+  <tabstop>sbFromSecs</tabstop>
+  <tabstop>sbFromFrames</tabstop>
+  <tabstop>sbToHours</tabstop>
+  <tabstop>sbToMins</tabstop>
+  <tabstop>sbToSecs</tabstop>
+  <tabstop>sbToFrames</tabstop>
+  <tabstop>comboFrameRate</tabstop>
+  <tabstop>checkDropFrame</tabstop>
+  <tabstop>comboSoundMode</tabstop>
+  <tabstop>comboBitRate</tabstop>
+  <tabstop>comboSampleRate</tabstop>
+  <tabstop>buttonSave</tabstop>
+ </tabstops>
  <resources>
   <include location="UI.qrc"/>
  </resources>
