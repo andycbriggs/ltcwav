@@ -15,16 +15,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    libltc/timecode.c \
-    libltc/ltc.c \
-    libltc/encoder.c \
-    libltc/decoder.c
+    libltc/src/decoder.c \
+    libltc/src/encoder.c \
+    libltc/src/ltc.c \
+    libltc/src/timecode.c \
+        mainwindow.cpp
 
 HEADERS  += mainwindow.h \
-    libltc/decoder.h \
-    libltc/encoder.h \
-    libltc/ltc.h
+    libltc/src/decoder.h \
+    libltc/src/encoder.h \
+    libltc/src/ltc.h
 
 FORMS    += mainwindow.ui
 

@@ -1,12 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include <QTDebug>
+#include <QtDebug>
 #include <QFileDialog>
 
-#include "libltc/ltc.h"
-#include "libltc/encoder.h"
-#include "libltc/decoder.h"
+#include "libltc\src\ltc.h"
+#include "libltc\src\encoder.h"
+#include "libltc\src\decoder.h"
 
 enum SelectFrameRate {
     FPS24 = 0,
@@ -57,13 +57,13 @@ void MainWindow::on_buttonSave_clicked()
         return;
     }
 
-    SMPTETimecode fromTimecode = {0};
+    SMPTETimecode fromTimecode = { 0 };
     fromTimecode.hours = ui->sbFromHours->value();
     fromTimecode.mins = ui->sbFromMins->value();
     fromTimecode.secs = ui->sbFromSecs->value();
     fromTimecode.frame = ui->sbFromFrames->value();
 
-    SMPTETimecode toTimecode = {0};
+    SMPTETimecode toTimecode = { 0 };
     toTimecode.hours = ui->sbToHours->value();
     toTimecode.mins = ui->sbToMins->value();
     toTimecode.secs = ui->sbToSecs->value();
@@ -166,7 +166,7 @@ void MainWindow::on_buttonSave_clicked()
                 progressFrames = static_cast<unsigned int>(((progressTimecode.hours * 60 * 60) + (progressTimecode.mins * 60) + (progressTimecode.secs)) * frameRate()) + progressTimecode.frame;
             }
 
-            delete buffer;
+            delete[] buffer;
             delete memoryBuffer8bit;
             delete memoryBuffer16bit;
 
