@@ -13,6 +13,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = LTCWAV
 TEMPLATE = app
 
+VERSION = 1
+
 RC_ICONS = wav.ico
 
 SOURCES += main.cpp\
